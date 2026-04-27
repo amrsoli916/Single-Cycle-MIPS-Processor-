@@ -84,7 +84,7 @@ Simulation waveforms demonstrate correct data transfer and synchronization betwe
 ### ⚙️ Synthesis Output
 
 Vivado reports confirm successful synthesis with acceptable resource utilization and a clear RTL structure.
-![sysnthsis](sysnthsis.png)
+![sysnthsis](synthsis.png)
 
 ---
 

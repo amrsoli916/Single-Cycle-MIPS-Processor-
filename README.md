@@ -79,10 +79,12 @@ This ensures the design is implementable on real hardware (FPGA).
 ### 🧪 Simulation Output
 
 Simulation waveforms demonstrate correct data transfer and synchronization between logical processes using message passing.
+![simulation](simulation.png)
 
 ### ⚙️ Synthesis Output
 
 Vivado reports confirm successful synthesis with acceptable resource utilization and a clear RTL structure.
+![sysnthsis](sysnthsis.png)
 
 ---
 

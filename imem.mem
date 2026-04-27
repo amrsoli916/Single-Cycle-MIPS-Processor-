@@ -1,6 +1,19 @@
-2008000F
-20090005
-01095020
-AC0A0000
-8C0B0000
-01696022
+20080005   // addi $t0, $zero, 5      → t0 = 5
+
+20090005   // addi $t1, $zero, 5      → t1 = 5
+
+01095020   // add  $t2, $t0, $t1      → t2 = 10
+
+01485822   // sub  $t3, $t2, $t0      → t3 = 5
+
+11090001   // beq  $t0, $t1, +1       → branch to LABEL if equal
+
+200C0063   // addi $t4, $zero, 99     → SHOULD BE SKIPPED
+
+200D0001   // addi $t5, $zero, 1      → LABEL: t5 = 1
+
+08000009   // j END                   → jump to instruction index 9
+
+200E0064   // addi $t6, $zero, 100    → SHOULD BE SKIPPED
+
+01A87820   // add  $t7, $t5, $t0      → END: t7 = 6
